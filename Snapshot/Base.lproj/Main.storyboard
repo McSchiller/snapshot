@@ -20,11 +20,59 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snapshotIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="jc5-DP-AFQ">
+                                <rect key="frame" x="84" y="50" width="207" height="101"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Mail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D2e-2h-uXH">
+                                <rect key="frame" x="87.5" y="221" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="OgF-2S-Gpx"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passwort" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="clB-xg-USq">
+                                <rect key="frame" x="87.5" y="271" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="0zg-mj-q99"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7g-f1-o7O">
+                                <rect key="frame" x="132.5" y="361" width="109" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Anmelden"/>
+                                <connections>
+                                    <action selector="loginTabbed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qRQ-jz-txw"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jc5-DP-AFQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AZ0-x2-rjW"/>
+                            <constraint firstItem="M7g-f1-o7O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EK8-PF-t8V"/>
+                            <constraint firstItem="clB-xg-USq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jkf-VF-btW"/>
+                            <constraint firstItem="clB-xg-USq" firstAttribute="top" secondItem="D2e-2h-uXH" secondAttribute="bottom" constant="20" id="LBU-Dl-uiG"/>
+                            <constraint firstItem="M7g-f1-o7O" firstAttribute="top" secondItem="clB-xg-USq" secondAttribute="bottom" constant="60" id="QJZ-Lr-ZC3"/>
+                            <constraint firstItem="jc5-DP-AFQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="SyJ-Wk-dt4"/>
+                            <constraint firstItem="D2e-2h-uXH" firstAttribute="top" secondItem="jc5-DP-AFQ" secondAttribute="bottom" constant="70" id="cK5-YR-Kjy"/>
+                            <constraint firstItem="jc5-DP-AFQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cil-Jl-Bjb"/>
+                            <constraint firstItem="D2e-2h-uXH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pFo-EZ-f2p"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="D2e-2h-uXH" id="aZp-35-Y9c"/>
+                        <outlet property="passwordTextField" destination="clB-xg-USq" id="FwQ-6k-pbf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="snapshotIcon.png" width="207" height="101"/>
+    </resources>
 </document>

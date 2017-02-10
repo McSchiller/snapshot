@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32BA213D55A9413FA30AFD88 /* Pods_Snapshot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38A1A29A3AAFBFB8C307E7C /* Pods_Snapshot.framework */; };
 		CAEF0C891E4E7831002F56E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEF0C881E4E7831002F56E2 /* AppDelegate.swift */; };
 		CAEF0C8B1E4E7831002F56E2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEF0C8A1E4E7831002F56E2 /* LoginViewController.swift */; };
 		CAEF0C8E1E4E7831002F56E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAEF0C8C1E4E7831002F56E2 /* Main.storyboard */; };
 		CAEF0C911E4E7831002F56E2 /* Snapshot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CAEF0C8F1E4E7831002F56E2 /* Snapshot.xcdatamodeld */; };
 		CAEF0C931E4E7831002F56E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEF0C921E4E7831002F56E2 /* Assets.xcassets */; };
 		CAEF0C961E4E7831002F56E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAEF0C941E4E7831002F56E2 /* LaunchScreen.storyboard */; };
+		CAEF0C9E1E4E7A7A002F56E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAEF0C9D1E4E7A7A002F56E2 /* GoogleService-Info.plist */; };
+		CAEF0CA21E4E82F4002F56E2 /* snapshotIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CAEF0CA11E4E82F4002F56E2 /* snapshotIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C750CE523D856CB22FB506F /* Pods-Snapshot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapshot.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snapshot/Pods-Snapshot.release.xcconfig"; sourceTree = "<group>"; };
+		9C719F72A0CF0F03F913822D /* Pods-Snapshot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapshot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snapshot/Pods-Snapshot.debug.xcconfig"; sourceTree = "<group>"; };
 		CAEF0C851E4E7831002F56E2 /* Snapshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAEF0C881E4E7831002F56E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAEF0C8A1E4E7831002F56E2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		CAEF0C921E4E7831002F56E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAEF0C951E4E7831002F56E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAEF0C971E4E7831002F56E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAEF0C9D1E4E7A7A002F56E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CAEF0CA11E4E82F4002F56E2 /* snapshotIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snapshotIcon.png; sourceTree = "<group>"; };
+		F38A1A29A3AAFBFB8C307E7C /* Pods_Snapshot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snapshot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32BA213D55A9413FA30AFD88 /* Pods_Snapshot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F8DEACAB81732585F489B71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F38A1A29A3AAFBFB8C307E7C /* Pods_Snapshot.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8879D057F50A6940047C0E02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C719F72A0CF0F03F913822D /* Pods-Snapshot.debug.xcconfig */,
+				8C750CE523D856CB22FB506F /* Pods-Snapshot.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CAEF0C7C1E4E7831002F56E2 = {
 			isa = PBXGroup;
 			children = (
 				CAEF0C871E4E7831002F56E2 /* Snapshot */,
 				CAEF0C861E4E7831002F56E2 /* Products */,
+				8879D057F50A6940047C0E02 /* Pods */,
+				2F8DEACAB81732585F489B71 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +84,25 @@
 		CAEF0C871E4E7831002F56E2 /* Snapshot */ = {
 			isa = PBXGroup;
 			children = (
+				CAEF0CA31E4E8300002F56E2 /* images */,
 				CAEF0C881E4E7831002F56E2 /* AppDelegate.swift */,
 				CAEF0C8A1E4E7831002F56E2 /* LoginViewController.swift */,
 				CAEF0C8C1E4E7831002F56E2 /* Main.storyboard */,
 				CAEF0C921E4E7831002F56E2 /* Assets.xcassets */,
 				CAEF0C941E4E7831002F56E2 /* LaunchScreen.storyboard */,
 				CAEF0C971E4E7831002F56E2 /* Info.plist */,
+				CAEF0C9D1E4E7A7A002F56E2 /* GoogleService-Info.plist */,
 				CAEF0C8F1E4E7831002F56E2 /* Snapshot.xcdatamodeld */,
 			);
 			path = Snapshot;
+			sourceTree = "<group>";
+		};
+		CAEF0CA31E4E8300002F56E2 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				CAEF0CA11E4E82F4002F56E2 /* snapshotIcon.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +112,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAEF0C9A1E4E7831002F56E2 /* Build configuration list for PBXNativeTarget "Snapshot" */;
 			buildPhases = (
+				9500E5609CBEC88DEE772132 /* [CP] Check Pods Manifest.lock */,
 				CAEF0C811E4E7831002F56E2 /* Sources */,
 				CAEF0C821E4E7831002F56E2 /* Frameworks */,
 				CAEF0C831E4E7831002F56E2 /* Resources */,
+				9B10A8A41BD3580ABB13C9F1 /* [CP] Embed Pods Frameworks */,
+				3F36B2AEE8289DFE41A13F7F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,12 +169,62 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAEF0C961E4E7831002F56E2 /* LaunchScreen.storyboard in Resources */,
+				CAEF0C9E1E4E7A7A002F56E2 /* GoogleService-Info.plist in Resources */,
 				CAEF0C931E4E7831002F56E2 /* Assets.xcassets in Resources */,
+				CAEF0CA21E4E82F4002F56E2 /* snapshotIcon.png in Resources */,
 				CAEF0C8E1E4E7831002F56E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F36B2AEE8289DFE41A13F7F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Snapshot/Pods-Snapshot-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9500E5609CBEC88DEE772132 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9B10A8A41BD3580ABB13C9F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Snapshot/Pods-Snapshot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CAEF0C811E4E7831002F56E2 /* Sources */ = {
@@ -265,6 +356,7 @@
 		};
 		CAEF0C9B1E4E7831002F56E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C719F72A0CF0F03F913822D /* Pods-Snapshot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NR5J9H8TC7;
@@ -279,6 +371,7 @@
 		};
 		CAEF0C9C1E4E7831002F56E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C750CE523D856CB22FB506F /* Pods-Snapshot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NR5J9H8TC7;
@@ -310,6 +403,7 @@
 				CAEF0C9C1E4E7831002F56E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
