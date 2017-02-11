@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12074.1"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -148,21 +149,62 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="F5A-dQ-CgI">
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="Wkw-jL-Pkg">
-                            <connections>
-                                <action selector="cameraTabbed:" destination="4IM-d6-GBp" id="hhZ-Qx-kRX"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="camera" id="Wkw-jL-Pkg">
+                                <connections>
+                                    <action selector="cameraTabbed:" destination="4IM-d6-GBp" id="hhZ-Qx-kRX"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="organize" id="DCF-np-R4i">
+                                <connections>
+                                    <action selector="libaryTabbed:" destination="4IM-d6-GBp" id="7hO-KD-4Nh"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="descriptionTextField" destination="zzg-pl-LBs" id="cqb-e8-WcJ"/>
                         <outlet property="imageView" destination="Z3x-pn-RPl" id="Vd8-FH-qfg"/>
                         <outlet property="nextButton" destination="J7n-4n-asl" id="qIy-Kt-cOS"/>
+                        <segue destination="tEs-Pi-kuh" kind="show" identifier="selectUserSegue" id="gpP-6Y-ChB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zh1-j6-Yo4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3029.5999999999999" y="38.23088455772114"/>
+        </scene>
+        <!--Select User View Controller-->
+        <scene sceneID="nQI-Er-eui">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="tEs-Pi-kuh" customClass="SelectUserViewController" customModule="Snapshot" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XDC-hW-eJ1"/>
+                        <viewControllerLayoutGuide type="bottom" id="3cS-ST-qbC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q53-qR-jkS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ka0-qM-0dS">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ka0-qM-0dS" firstAttribute="leading" secondItem="Q53-qR-jkS" secondAttribute="leading" id="3BS-Aj-ihM"/>
+                            <constraint firstItem="Ka0-qM-0dS" firstAttribute="top" secondItem="XDC-hW-eJ1" secondAttribute="bottom" id="JGa-U6-NM0"/>
+                            <constraint firstAttribute="trailing" secondItem="Ka0-qM-0dS" secondAttribute="trailing" id="NZj-lj-z0D"/>
+                            <constraint firstItem="3cS-ST-qbC" firstAttribute="top" secondItem="Ka0-qM-0dS" secondAttribute="bottom" id="sp5-Az-Pkn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Ka0-qM-0dS" id="Bth-XI-oAh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="opA-gN-QLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3860" y="38"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2RP-5G-sqF">
