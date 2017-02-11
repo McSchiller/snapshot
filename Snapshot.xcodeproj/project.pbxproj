@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		32BA213D55A9413FA30AFD88 /* Pods_Snapshot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38A1A29A3AAFBFB8C307E7C /* Pods_Snapshot.framework */; };
+		CA217DD61E4E95E700A264C6 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA217DD51E4E95E700A264C6 /* SnapsViewController.swift */; };
+		CA217DD81E4E988D00A264C6 /* bild.png in Resources */ = {isa = PBXBuildFile; fileRef = CA217DD71E4E988D00A264C6 /* bild.png */; };
+		CA217DDA1E4E9AE500A264C6 /* PicturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA217DD91E4E9AE500A264C6 /* PicturesViewController.swift */; };
 		CAEF0C891E4E7831002F56E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEF0C881E4E7831002F56E2 /* AppDelegate.swift */; };
 		CAEF0C8B1E4E7831002F56E2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEF0C8A1E4E7831002F56E2 /* LoginViewController.swift */; };
 		CAEF0C8E1E4E7831002F56E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAEF0C8C1E4E7831002F56E2 /* Main.storyboard */; };
@@ -21,6 +24,9 @@
 /* Begin PBXFileReference section */
 		8C750CE523D856CB22FB506F /* Pods-Snapshot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapshot.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snapshot/Pods-Snapshot.release.xcconfig"; sourceTree = "<group>"; };
 		9C719F72A0CF0F03F913822D /* Pods-Snapshot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapshot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snapshot/Pods-Snapshot.debug.xcconfig"; sourceTree = "<group>"; };
+		CA217DD51E4E95E700A264C6 /* SnapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
+		CA217DD71E4E988D00A264C6 /* bild.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bild.png; sourceTree = "<group>"; };
+		CA217DD91E4E9AE500A264C6 /* PicturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicturesViewController.swift; sourceTree = "<group>"; };
 		CAEF0C851E4E7831002F56E2 /* Snapshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAEF0C881E4E7831002F56E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAEF0C8A1E4E7831002F56E2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -87,8 +93,10 @@
 				CAEF0CA31E4E8300002F56E2 /* images */,
 				CAEF0C881E4E7831002F56E2 /* AppDelegate.swift */,
 				CAEF0C8A1E4E7831002F56E2 /* LoginViewController.swift */,
-				CAEF0C8C1E4E7831002F56E2 /* Main.storyboard */,
+				CA217DD51E4E95E700A264C6 /* SnapsViewController.swift */,
+				CA217DD91E4E9AE500A264C6 /* PicturesViewController.swift */,
 				CAEF0C921E4E7831002F56E2 /* Assets.xcassets */,
+				CAEF0C8C1E4E7831002F56E2 /* Main.storyboard */,
 				CAEF0C941E4E7831002F56E2 /* LaunchScreen.storyboard */,
 				CAEF0C971E4E7831002F56E2 /* Info.plist */,
 				CAEF0C9D1E4E7A7A002F56E2 /* GoogleService-Info.plist */,
@@ -100,6 +108,7 @@
 		CAEF0CA31E4E8300002F56E2 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				CA217DD71E4E988D00A264C6 /* bild.png */,
 				CAEF0CA11E4E82F4002F56E2 /* snapshotIcon.png */,
 			);
 			name = images;
@@ -170,6 +179,7 @@
 			files = (
 				CAEF0C961E4E7831002F56E2 /* LaunchScreen.storyboard in Resources */,
 				CAEF0C9E1E4E7A7A002F56E2 /* GoogleService-Info.plist in Resources */,
+				CA217DD81E4E988D00A264C6 /* bild.png in Resources */,
 				CAEF0C931E4E7831002F56E2 /* Assets.xcassets in Resources */,
 				CAEF0CA21E4E82F4002F56E2 /* snapshotIcon.png in Resources */,
 				CAEF0C8E1E4E7831002F56E2 /* Main.storyboard in Resources */,
@@ -231,7 +241,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA217DD61E4E95E700A264C6 /* SnapsViewController.swift in Sources */,
 				CAEF0C911E4E7831002F56E2 /* Snapshot.xcdatamodeld in Sources */,
+				CA217DDA1E4E9AE500A264C6 /* PicturesViewController.swift in Sources */,
 				CAEF0C8B1E4E7831002F56E2 /* LoginViewController.swift in Sources */,
 				CAEF0C891E4E7831002F56E2 /* AppDelegate.swift in Sources */,
 			);
